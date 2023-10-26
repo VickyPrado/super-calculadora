@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="./style.css">
+        
+    <title>Super Calculadora</title>
+    </head>
+    <body>     
+      <header>     
+        <h1>Super Calculadora</h1>          
+        <div class="flex inputsCnt">            
+            <label for="numero-a">Primeiro número (A)</label>
+            <input type="number" name="numero-a" id="numero-a">          
+            <label for="numero-b">Segundo número (B)</label>
+            <input type="number" name="numero-b" id="numero-b">          
+            <input type="button" value="calcular" onclick="calcular()" id="calcular">          
+        </div>
+      </header>   
+      <main>
+        <div class="flex">
+          <section class="calculoCnt">            
+            <p class="nomeCalculo" id="soma">Soma</p>
+            <p class="resultadoCalculo" id="resultado-sm">0</p>
+          </section>
+          <section class="calculoCnt">    
+            <p class="nomeCalculo" id="subtracao1">Subtração A - B</p>
+            <p class="resultadoCalculo" id="resultado-sub1">0</p>
+          </section>    
+          <section class="calculoCnt">  
+            <p class="nomeCalculo" id="subtracao2">Subtração B - A</p>
+            <p class="resultadoCalculo" id="resultado-sub2">0</p>
+          </section>
+        </div>
+        <div class="flex">  
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="divisao1">Divisão A / B</p>
+            <p class="resultadoCalculo" id="resultado-div1">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="divisao2">Divisão B / A</p>
+            <p class="resultadoCalculo" id="resultado-div2">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="multiplicacao">Multiplicação</p>
+            <p class="resultadoCalculo" id="resultado-mult">0</p>
+          </section>
+        </div>
+        <div class="flex">  
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="potencia1">Potência de A na base B</p>
+            <p class="resultadoCalculo" id="resultado-pot1">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="potencia2">Potência de B na base A</p>
+            <p class="resultadoCalculo" id="resultado-pot2">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="raiz1">Raiz quadrada de A</p>
+            <p class="resultadoCalculo" id="resultado-rq1">0</p>
+          </section>
+        </div>
+        <div class="flex">  
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="raiz2">Raiz quadrada de B</p>
+            <p class="resultadoCalculo" id="resultado-rq2">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="fatorial1">Fatorial de A</p>
+            <p class="resultadoCalculo" id="resultado-fat1">0</p>
+          </section>
+          <section class="calculoCnt">        
+            <p class="nomeCalculo" id="fatorial2">Fatorial de B</p>
+            <p class="resultadoCalculo" id="resultado-fat2">0</p>
+          </section>
+        </div>
+        <div class="flex">  
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="porcentagem1">Porcentagem de A em relação a B</p>
+            <p class="resultadoCalculo" id="resultado-porc1">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="porcentagem2">Porcentagem de B em relação a A</p>
+            <p class="resultadoCalculo" id="resultado-porc2">0</p>
+          </section>
+          <section class="calculoCnt">
+            <p class="nomeCalculo" id="media">Média</p>
+            <p class="resultadoCalculo" id="resultado-med">0</p>
+          </section>
+        </div>
+      </main>                 
+    <script defer src="./script.js"></script>
+  </body>
+</html>
